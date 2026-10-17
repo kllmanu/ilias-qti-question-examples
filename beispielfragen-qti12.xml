@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <questestinterop>
-    <item ident="il_1_qst_1" title="Single Choice: Hauptstadt" maxattempts="0">
+    <item ident="il_1_qst_1" title="01 - Single Choice: Hauptstadt" maxattempts="0">
         <qticomment>Beispielaufgabe zum Fragetyp Single Choice.</qticomment>
         <itemmetadata>
             <qtimetadata>
                 <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assSingleChoice</fieldentry></qtimetadatafield>
-                <qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Beispiel</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Copilot</fieldentry></qtimetadatafield>
             </qtimetadata>
         </itemmetadata>
         <presentation>
@@ -60,13 +60,13 @@
         </resprocessing>
     </item>
 
-    <item ident="il_1_qst_2" title="Multiple Choice: Primzahlen" maxattempts="0">
+    <item ident="il_1_qst_2" title="02 - Multiple Choice: Primzahlen" maxattempts="0">
         <qticomment>Beispielaufgabe zum Fragetyp Multiple Choice.</qticomment>
         <itemmetadata>
             <qtimetadata>
                 <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assMultipleChoice</fieldentry></qtimetadatafield>
-                <qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Beispiel</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Copilot</fieldentry></qtimetadatafield>
             </qtimetadata>
         </itemmetadata>
         <presentation>
@@ -120,13 +120,13 @@
         </resprocessing>
     </item>
 
-    <item ident="il_1_qst_3" title="Kprim: Aussagen zur Erde" maxattempts="0">
+    <item ident="il_1_qst_3" title="03 - Kprim: Aussagen zur Erde" maxattempts="0">
         <qticomment>Beispielaufgabe zum Fragetyp Kprim Choice.</qticomment>
         <itemmetadata>
             <qtimetadata>
                 <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assKprimChoice</fieldentry></qtimetadatafield>
-                <qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Beispiel</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Copilot</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>points</fieldlabel><fieldentry>4</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>answer_type</fieldlabel><fieldentry>singleLine</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>option_label_setting</fieldlabel><fieldentry>right_wrong</fieldentry></qtimetadatafield>
@@ -193,13 +193,13 @@
         </resprocessing>
     </item>
 
-    <item ident="il_1_qst_4" title="Fehler/Worte markieren: Hauptstadt" maxattempts="0">
+    <item ident="il_1_qst_4" title="04 - Fehler/Worte markieren: Hauptstadt" maxattempts="0">
         <qticomment>Beispielaufgabe zum Fragetyp Fehler/Worte markieren.</qticomment>
         <itemmetadata>
             <qtimetadata>
                 <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assErrorText</fieldentry></qtimetadatafield>
-                <qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Beispiel</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Copilot</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>points_wrong</fieldlabel><fieldentry>0</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>errortext</fieldlabel><fieldentry>Die Hauptstadt ist Bonn.</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>textsize</fieldlabel><fieldentry>40</fieldentry></qtimetadatafield>
@@ -215,12 +215,12 @@
         </presentation>
     </item>
 
-    <item ident="il_1_qst_5" title="Hotspot/Imagemap: Lage auf der Karte" maxattempts="0">
+    <item ident="il_1_qst_5" title="05 - Hotspot/Imagemap: Lage auf der Karte" maxattempts="0">
         <qticomment>Beispielaufgabe zum Fragetyp Hotspot/Imagemap.</qticomment>
         <itemmetadata>
             <qtimetadata>
                 <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
-                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assImagemapQuestion</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assImagemapQuestion</fieldentry></qtimetadatafield><qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Copilot</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>IS_MULTIPLE_CHOICE</fieldlabel><fieldentry>0</fieldentry></qtimetadatafield>
             </qtimetadata>
         </itemmetadata>
@@ -254,12 +254,12 @@
         </resprocessing>
     </item>
 
-    <item ident="il_1_qst_6" title="Lückentext: Wasser" maxattempts="0">
+    <item ident="il_1_qst_6" title="06 - Lückentext: Wasser" maxattempts="0">
         <qticomment>Beispielaufgabe zum Fragetyp Lückentextfrage.</qticomment>
         <itemmetadata>
             <qtimetadata>
                 <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
-                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assClozeTest</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assClozeTest</fieldentry></qtimetadatafield><qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Copilot</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>question</fieldlabel><fieldentry>Wasser besteht aus Wasserstoff und Sauerstoff.</fieldentry></qtimetadatafield>
             </qtimetadata>
         </itemmetadata>
@@ -289,12 +289,12 @@
         </resprocessing>
     </item>
 
-    <item ident="il_1_qst_7" title="Numerische Antwort: Umfang" maxattempts="0">
+    <item ident="il_1_qst_7" title="07 - Numerische Antwort: Umfang" maxattempts="0">
         <qticomment>Beispielaufgabe zum Fragetyp Numerische Antwort.</qticomment>
         <itemmetadata>
             <qtimetadata>
                 <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
-                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assNumeric</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assNumeric</fieldentry></qtimetadatafield><qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Copilot</fieldentry></qtimetadatafield>
             </qtimetadata>
         </itemmetadata>
         <presentation>
@@ -322,12 +322,12 @@
         </resprocessing>
     </item>
 
-    <item ident="il_1_qst_8" title="Formelfrage: Rechnen mit Formeln" maxattempts="0">
+    <item ident="il_1_qst_8" title="08 - Formelfrage: Rechnen mit Formeln" maxattempts="0">
         <qticomment>Beispielaufgabe zum Fragetyp Formel.</qticomment>
         <itemmetadata>
             <qtimetadata>
                 <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
-                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assFormulaQuestion</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assFormulaQuestion</fieldentry></qtimetadatafield><qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Copilot</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>points</fieldlabel><fieldentry>1</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>$r1</fieldlabel><fieldentry><![CDATA[a:10:{s:9:"precision";i:0;s:9:"tolerance";d:0;s:8:"rangemin";d:9;s:8:"rangemax";d:9;s:6:"points";d:1;s:7:"formula";s:3:"4+5";s:6:"rating";s:0:"";s:4:"unit";s:0:"";s:9:"unitvalue";s:0:"";s:11:"resultunits";a:0:{}}]]></fieldentry></qtimetadatafield>
             </qtimetadata>
@@ -341,12 +341,12 @@
         </presentation>
     </item>
 
-    <item ident="il_1_qst_9" title="Begriffe benennen: Aggregatzustände" maxattempts="0">
+    <item ident="il_1_qst_9" title="09 - Begriffe benennen: Aggregatzustände" maxattempts="0">
         <qticomment>Beispielaufgabe zum Fragetyp Begriffe benennen.</qticomment>
         <itemmetadata>
             <qtimetadata>
                 <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
-                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assTextSubset</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assTextSubset</fieldentry></qtimetadatafield><qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Copilot</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>textrating</fieldlabel><fieldentry>1</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>correctanswers</fieldlabel><fieldentry>1</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>points</fieldlabel><fieldentry>1</fieldentry></qtimetadatafield>
@@ -376,12 +376,12 @@
         </resprocessing>
     </item>
 
-    <item ident="il_1_qst_10" title="Anordnungsfrage vertikal: Planeten" maxattempts="0">
+    <item ident="il_1_qst_10" title="10 - Anordnungsfrage vertikal: Planeten" maxattempts="0">
         <qticomment>Beispielaufgabe zum Fragetyp Anordnungsfrage: vertikal.</qticomment>
         <itemmetadata>
             <qtimetadata>
                 <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
-                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assOrderingQuestion</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assOrderingQuestion</fieldentry></qtimetadatafield><qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Copilot</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>points</fieldlabel><fieldentry>1</fieldentry></qtimetadatafield>
             </qtimetadata>
         </itemmetadata>
@@ -437,12 +437,12 @@
         </resprocessing>
     </item>
 
-    <item ident="il_1_qst_11" title="Anordnungsfrage horizontal: Tagesablauf" maxattempts="0">
+    <item ident="il_1_qst_11" title="11 - Anordnungsfrage horizontal: Tagesablauf" maxattempts="0">
         <qticomment>Beispielaufgabe zum Fragetyp Anordnungsfrage: horizontal.</qticomment>
         <itemmetadata>
             <qtimetadata>
                 <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
-                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assOrderingHorizontal</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assOrderingHorizontal</fieldentry></qtimetadatafield><qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Copilot</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>points</fieldlabel><fieldentry>1</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>ordertext</fieldlabel><fieldentry>Aufstehen | Fruehstuecken | Losgehen</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>textsize</fieldlabel><fieldentry>20</fieldentry></qtimetadatafield>
@@ -459,12 +459,12 @@
         </presentation>
     </item>
 
-    <item ident="il_1_qst_12" title="Zuordnungsfrage: Tier und Lebensraum" maxattempts="0">
+    <item ident="il_1_qst_12" title="12 - Zuordnungsfrage: Tier und Lebensraum" maxattempts="0">
         <qticomment>Beispielaufgabe zum Fragetyp Zuordnungsfrage.</qticomment>
         <itemmetadata>
             <qtimetadata>
                 <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
-                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assMatchingQuestion</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assMatchingQuestion</fieldentry></qtimetadatafield><qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Copilot</fieldentry></qtimetadatafield>
             </qtimetadata>
         </itemmetadata>
         <presentation>
@@ -518,12 +518,12 @@
         </resprocessing>
     </item>
 
-    <item ident="il_1_qst_13" title="Freitext eingeben: Energie sparen" maxattempts="0">
+    <item ident="il_1_qst_13" title="13 - Freitext eingeben: Energie sparen" maxattempts="0">
         <qticomment>Beispielaufgabe zum Fragetyp Freitext eingeben.</qticomment>
         <itemmetadata>
             <qtimetadata>
                 <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
-                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assTextQuestion</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assTextQuestion</fieldentry></qtimetadatafield><qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Copilot</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>textrating</fieldlabel><fieldentry>0</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>matchcondition</fieldlabel><fieldentry>0</fieldentry></qtimetadatafield>
             </qtimetadata>
@@ -551,12 +551,12 @@
         </resprocessing>
     </item>
 
-    <item ident="il_1_qst_14" title="Datei hochladen: Diagramm" maxattempts="0">
+    <item ident="il_1_qst_14" title="14 - Datei hochladen: Diagramm" maxattempts="0">
         <qticomment>Beispielaufgabe zum Fragetyp Datei hochladen.</qticomment>
         <itemmetadata>
             <qtimetadata>
                 <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
-                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assFileUpload</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assFileUpload</fieldentry></qtimetadatafield><qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Copilot</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>points</fieldlabel><fieldentry>5</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>maxsize</fieldlabel><fieldentry>10</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>allowedextensions</fieldlabel><fieldentry>pdf,png,jpg</fieldentry></qtimetadatafield>
@@ -572,12 +572,12 @@
         </presentation>
     </item>
 
-    <item ident="il_1_qst_15" title="Long Menu: Kontinente" maxattempts="0">
+    <item ident="il_1_qst_15" title="15 - Long Menu: Kontinente" maxattempts="0">
         <qticomment>Beispielaufgabe zum Fragetyp Long Menu.</qticomment>
         <itemmetadata>
             <qtimetadata>
                 <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
-                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assLongMenu</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assLongMenu</fieldentry></qtimetadatafield><qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Copilot</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>minAutoCompleteLength</fieldlabel><fieldentry>1</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>identical_scoring</fieldlabel><fieldentry>0</fieldentry></qtimetadatafield>
                 <qtimetadatafield><fieldlabel>gapTypes</fieldlabel><fieldentry>["select"]</fieldentry></qtimetadatafield>
