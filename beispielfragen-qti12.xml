@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop>
+    <item ident="il_1_qst_1" title="Single Choice: Hauptstadt" maxattempts="0">
+        <qticomment>Beispielaufgabe zum Fragetyp Single Choice.</qticomment>
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assSingleChoice</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Beispiel</fieldentry></qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <flow>
+                <material>
+                    <mattext texttype="text/plain">Was ist die Hauptstadt von Frankreich?</mattext>
+                </material>
+                <response_lid ident="MCSR" rcardinality="Single">
+                    <render_choice shuffle="No">
+                        <response_label ident="A">
+                            <material>
+                                <mattext>Paris</mattext>
+                            </material>
+                        </response_label>
+                        <response_label ident="B">
+                            <material>
+                                <mattext>Lyon</mattext>
+                            </material>
+                        </response_label>
+                        <response_label ident="C">
+                            <material>
+                                <mattext>Marseille</mattext>
+                            </material>
+                        </response_label>
+                    </render_choice>
+                </response_lid>
+            </flow>
+        </presentation>
+        <resprocessing>
+            <outcomes>
+                <decvar/>
+            </outcomes>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varequal respident="MCSR">A</varequal>
+                </conditionvar>
+                <setvar action="Add">1</setvar>
+            </respcondition>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varequal respident="MCSR">B</varequal>
+                </conditionvar>
+                <setvar action="Add">0</setvar>
+            </respcondition>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varequal respident="MCSR">C</varequal>
+                </conditionvar>
+                <setvar action="Add">0</setvar>
+            </respcondition>
+        </resprocessing>
+    </item>
+
+    <item ident="il_1_qst_2" title="Multiple Choice: Primzahlen" maxattempts="0">
+        <qticomment>Beispielaufgabe zum Fragetyp Multiple Choice.</qticomment>
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assMultipleChoice</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Beispiel</fieldentry></qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <flow>
+                <material>
+                    <mattext texttype="text/plain">Welche Zahlen sind Primzahlen?</mattext>
+                </material>
+                <response_lid ident="MCMR" rcardinality="Multiple">
+                    <render_choice shuffle="No">
+                        <response_label ident="A">
+                            <material>
+                                <mattext>2</mattext>
+                            </material>
+                        </response_label>
+                        <response_label ident="B">
+                            <material>
+                                <mattext>9</mattext>
+                            </material>
+                        </response_label>
+                        <response_label ident="C">
+                            <material>
+                                <mattext>11</mattext>
+                            </material>
+                        </response_label>
+                    </render_choice>
+                </response_lid>
+            </flow>
+        </presentation>
+        <resprocessing>
+            <outcomes>
+                <decvar/>
+            </outcomes>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varequal respident="MCMR">A</varequal>
+                </conditionvar>
+                <setvar action="Add">1</setvar>
+            </respcondition>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varequal respident="MCMR">B</varequal>
+                </conditionvar>
+                <setvar action="Add">0</setvar>
+            </respcondition>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varequal respident="MCMR">C</varequal>
+                </conditionvar>
+                <setvar action="Add">1</setvar>
+            </respcondition>
+        </resprocessing>
+    </item>
+
+    <item ident="il_1_qst_3" title="Kprim: Aussagen zur Erde" maxattempts="0">
+        <qticomment>Beispielaufgabe zum Fragetyp Kprim Choice.</qticomment>
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assKprimChoice</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Beispiel</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>points</fieldlabel><fieldentry>4</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>answer_type</fieldlabel><fieldentry>singleLine</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>option_label_setting</fieldlabel><fieldentry>right_wrong</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>custom_true_option_label</fieldlabel><fieldentry>Richtig</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>custom_false_option_label</fieldlabel><fieldentry>Falsch</fieldentry></qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <flow>
+                <material>
+                    <mattext texttype="text/plain">Beurteilen Sie jede Aussage zur Erde als richtig
+                        oder falsch.</mattext>
+                </material>
+                <response_lid ident="MCMR" rcardinality="Multiple">
+                    <render_choice shuffle="No">
+                        <response_label ident="0">
+                            <material>
+                                <mattext>Die Erde kreist um die Sonne.</mattext>
+                            </material>
+                        </response_label>
+                        <response_label ident="1">
+                            <material>
+                                <mattext>Der Mond ist ein Stern.</mattext>
+                            </material>
+                        </response_label>
+                        <response_label ident="2">
+                            <material>
+                                <mattext>Ein Jahr hat etwa 365 Tage.</mattext>
+                            </material>
+                        </response_label>
+                        <response_label ident="3">
+                            <material>
+                                <mattext>Die Erde ist flach.</mattext>
+                            </material>
+                        </response_label>
+                    </render_choice>
+                </response_lid>
+            </flow>
+        </presentation>
+        <resprocessing>
+            <outcomes>
+                <decvar varname="SCORE" vartype="Decimal" defaultval="0" minvalue="0" maxvalue="4"/>
+            </outcomes>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varequal respident="0">1</varequal>
+                </conditionvar>
+            </respcondition>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varequal respident="1">0</varequal>
+                </conditionvar>
+            </respcondition>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varequal respident="2">1</varequal>
+                </conditionvar>
+            </respcondition>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varequal respident="3">0</varequal>
+                </conditionvar>
+            </respcondition>
+        </resprocessing>
+    </item>
+
+    <item ident="il_1_qst_4" title="Fehler/Worte markieren: Hauptstadt" maxattempts="0">
+        <qticomment>Beispielaufgabe zum Fragetyp Fehler/Worte markieren.</qticomment>
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assErrorText</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>AUTHOR</fieldlabel><fieldentry>Beispiel</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>points_wrong</fieldlabel><fieldentry>0</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>errortext</fieldlabel><fieldentry>Die Hauptstadt ist Bonn.</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>textsize</fieldlabel><fieldentry>40</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>errordata</fieldlabel><fieldentry><![CDATA[a:1:{i:0;a:4:{i:0;s:6:"Berlin";i:1;s:4:"Bonn";i:2;i:1;i:3;i:19;}}]]></fieldentry></qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <flow>
+                <material>
+                    <mattext texttype="text/plain">Markieren Sie das falsche Wort im Satz.</mattext>
+                </material>
+            </flow>
+        </presentation>
+    </item>
+
+    <item ident="il_1_qst_5" title="Hotspot/Imagemap: Lage auf der Karte" maxattempts="0">
+        <qticomment>Beispielaufgabe zum Fragetyp Hotspot/Imagemap.</qticomment>
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assImagemapQuestion</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>IS_MULTIPLE_CHOICE</fieldlabel><fieldentry>0</fieldentry></qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <flow>
+                <material>
+                    <mattext texttype="text/plain">Klicken Sie auf den markierten Bereich der
+                        Beispielkarte.</mattext>
+                </material>
+                <response_xy ident="HOTSPOT" rcardinality="Single">
+                    <render_hotspot>
+                        <material>
+                            <matimage imagtype="image/png" label="beispielkarte.png" embedded="base64">
+                                iVBORw0KGgoAAAANSUhEUgAAAPAAAACCCAIAAAD33dIPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACsUlEQVR4nO3coW5TURzA4Y3sJVD3CTBVWPQm4A3QCCb2HBNDoHmDITaNRdXsCap4jCKaLKWdYKOlp798Xyp2b+6SI3755/Q2OafL5fIEKl4degGwS4ImRdCkCJqUs43raZoOtBJ4icVisX65GfT2EzCs7flry0GKoEkRNCmCJkXQpAiaFEGTImhSBE2KoEkRNCmCJkXQpAiaFEGTImhSBE2KoEkRNCmCJkXQpAiaFEGTImhSBE2KoEkRNCmCJkXQpAiaFEGTImhSBE2KoEkRNCmCJkXQpAiaFEGTImhSBE2KoEkRNCmCJkXQpAiaFEGT8sS5HH/v18eL3a1kj15/u3vW8x++f9rbWnbs9v3XZz3/4cvD3tayS7ef37zsH01oUgRNiqBJETQpgiZF0KQImhRBkyJoUgRNiqBJETQpgiZF0KQImhRBkyJoUgRNiqBJETQpgiZF0KQImhRBkyJoUgRNiqBJETQpgiZF0KQImhRBk/JPB57vw9sfDycnJz/fvfC863HML+837sxuzg+0lr2YX/9x3P3s6nmnyu/JWBN6VfP6H8dudnO+jyZ+PFa1Ty7ult9tvs+lIGCfpzNq/GcaXql1PRjzY93BhnPAwW9sdPoNb1KObbrWDdI08PtoWPWR3K45nGMMqGrqnvoYY01oUt7jA2zm/P55f388t6c3quxgl5/WxeOO2l+fTHCNtqW4z8pfSncfk83yDu74SZ0T/VL4ezqbn59sd7xCON5oKC3fxo89h8LS/k+aZCCN9hykCJoUgRNiqBJETQpgiZF0KQImhRBkyJoUgRNiqBJETQpgiZF0KQImhRBkyJoUgRNiqBJETQpgiZF0KQImhRBkyJoUgRNyulyuVy/nqZpsVgcbj3wDNu5mtCkCJoUQZMiaFIETYqgSRE0KYImRdCkCJoUQZMiaFIETYqgSRE0KYImRdCkCJoUQZMiaFIETYqgSRE0Kb8BKFl7hQxlI4cAAAAASUVORK5CYII=</matimage>
+                        </material>
+                        <response_label ident="1" rarea="Rectangle">92,30,148,100</response_label>
+                    </render_hotspot>
+                </response_xy>
+            </flow>
+        </presentation>
+        <resprocessing>
+            <outcomes>
+                <decvar/>
+            </outcomes>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varinside respident="HOTSPOT">92,30,148,100</varinside>
+                </conditionvar>
+                <setvar action="Add">1</setvar>
+            </respcondition>
+        </resprocessing>
+    </item>
+
+    <item ident="il_1_qst_6" title="Lückentext: Wasser" maxattempts="0">
+        <qticomment>Beispielaufgabe zum Fragetyp Lückentextfrage.</qticomment>
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assClozeTest</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>question</fieldlabel><fieldentry>Wasser besteht aus Wasserstoff und Sauerstoff.</fieldentry></qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <flow>
+                <material>
+                    <mattext texttype="text/plain">Wasser besteht aus </mattext>
+                </material>
+                <response_str ident="gap_0" rcardinality="Single">
+                    <render_fib fibtype="String" prompt="Box" columns="12" maxchars="12"/>
+                </response_str>
+                <material>
+                    <mattext texttype="text/plain"> und Sauerstoff.</mattext>
+                </material>
+            </flow>
+        </presentation>
+        <resprocessing>
+            <outcomes>
+                <decvar/>
+            </outcomes>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varequal respident="gap_0">Wasserstoff</varequal>
+                </conditionvar>
+                <setvar action="Add">1</setvar>
+            </respcondition>
+        </resprocessing>
+    </item>
+
+    <item ident="il_1_qst_7" title="Numerische Antwort: Umfang" maxattempts="0">
+        <qticomment>Beispielaufgabe zum Fragetyp Numerische Antwort.</qticomment>
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assNumeric</fieldentry></qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <flow>
+                <material>
+                    <mattext texttype="text/plain">Wie gross ist der Umfang eines Quadrats mit
+                        Seitenlänge 5 cm? Geben Sie nur die Zahl ein.</mattext>
+                </material>
+                <response_num ident="NUM" rcardinality="Single" numtype="Decimal">
+                    <render_fib fibtype="Decimal" maxchars="8"/>
+                </response_num>
+            </flow>
+        </presentation>
+        <resprocessing>
+            <outcomes>
+                <decvar/>
+            </outcomes>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <vargte respident="NUM">20</vargte>
+                    <varlte respident="NUM">20</varlte>
+                </conditionvar>
+                <setvar action="Add">1</setvar>
+            </respcondition>
+        </resprocessing>
+    </item>
+
+    <item ident="il_1_qst_8" title="Formelfrage: Rechnen mit Formeln" maxattempts="0">
+        <qticomment>Beispielaufgabe zum Fragetyp Formel.</qticomment>
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assFormulaQuestion</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>points</fieldlabel><fieldentry>1</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>$r1</fieldlabel><fieldentry><![CDATA[a:10:{s:9:"precision";i:0;s:9:"tolerance";d:0;s:8:"rangemin";d:9;s:8:"rangemax";d:9;s:6:"points";d:1;s:7:"formula";s:3:"4+5";s:6:"rating";s:0:"";s:4:"unit";s:0:"";s:9:"unitvalue";s:0:"";s:11:"resultunits";a:0:{}}]]></fieldentry></qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <flow>
+                <material>
+                    <mattext texttype="text/plain">Berechnen Sie 4 + 5. Ergebnis: $r1</mattext>
+                </material>
+            </flow>
+        </presentation>
+    </item>
+
+    <item ident="il_1_qst_9" title="Begriffe benennen: Aggregatzustände" maxattempts="0">
+        <qticomment>Beispielaufgabe zum Fragetyp Begriffe benennen.</qticomment>
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assTextSubset</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>textrating</fieldlabel><fieldentry>1</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>correctanswers</fieldlabel><fieldentry>1</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>points</fieldlabel><fieldentry>1</fieldentry></qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <flow>
+                <material>
+                    <mattext texttype="text/plain">Wie nennt man den gasförmigen Zustand von Wasser?</mattext>
+                </material>
+                <response_str ident="TEXTSUBSET_1" rcardinality="Single">
+                    <render_fib fibtype="String" columns="20"/>
+                </response_str>
+            </flow>
+        </presentation>
+        <resprocessing>
+            <outcomes>
+                <decvar/>
+                <decvar varname="matches" defaultval="0"/>
+            </outcomes>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varsubset respident="TEXTSUBSET_1">Dampf</varsubset>
+                </conditionvar>
+                <setvar varname="matches" action="Add">1</setvar>
+            </respcondition>
+        </resprocessing>
+    </item>
+
+    <item ident="il_1_qst_10" title="Anordnungsfrage vertikal: Planeten" maxattempts="0">
+        <qticomment>Beispielaufgabe zum Fragetyp Anordnungsfrage: vertikal.</qticomment>
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assOrderingQuestion</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>points</fieldlabel><fieldentry>1</fieldentry></qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <flow>
+                <material>
+                    <mattext texttype="text/plain">Ordnen Sie die Planeten von der Sonne nach
+                        aussen.</mattext>
+                </material>
+                <response_lid ident="OQT" rcardinality="Ordered" output="javascript">
+                    <render_choice shuffle="Yes">
+                        <response_label ident="2">
+                            <material>
+                                <mattext>Erde</mattext>
+                            </material>
+                        </response_label>
+                        <response_label ident="0">
+                            <material>
+                                <mattext>Merkur</mattext>
+                            </material>
+                        </response_label>
+                        <response_label ident="1">
+                            <material>
+                                <mattext>Mars</mattext>
+                            </material>
+                        </response_label>
+                    </render_choice>
+                </response_lid>
+            </flow>
+        </presentation>
+        <resprocessing>
+            <outcomes>
+                <decvar/>
+            </outcomes>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varequal respident="OQT" index="2">0</varequal>
+                </conditionvar>
+                <setvar action="Add">1</setvar>
+            </respcondition>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varequal respident="OQT" index="0">1</varequal>
+                </conditionvar>
+                <setvar action="Add">1</setvar>
+            </respcondition>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varequal respident="OQT" index="1">2</varequal>
+                </conditionvar>
+                <setvar action="Add">1</setvar>
+            </respcondition>
+        </resprocessing>
+    </item>
+
+    <item ident="il_1_qst_11" title="Anordnungsfrage horizontal: Tagesablauf" maxattempts="0">
+        <qticomment>Beispielaufgabe zum Fragetyp Anordnungsfrage: horizontal.</qticomment>
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assOrderingHorizontal</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>points</fieldlabel><fieldentry>1</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>ordertext</fieldlabel><fieldentry>Aufstehen | Fruehstuecken | Losgehen</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>textsize</fieldlabel><fieldentry>20</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>separator</fieldlabel><fieldentry>|</fieldentry></qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <flow>
+                <material>
+                    <mattext texttype="text/plain">Bringen Sie die Schritte in die richtige
+                        Reihenfolge.</mattext>
+                </material>
+            </flow>
+        </presentation>
+    </item>
+
+    <item ident="il_1_qst_12" title="Zuordnungsfrage: Tier und Lebensraum" maxattempts="0">
+        <qticomment>Beispielaufgabe zum Fragetyp Zuordnungsfrage.</qticomment>
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assMatchingQuestion</fieldentry></qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <flow>
+                <material>
+                    <mattext texttype="text/plain">Ordnen Sie jedem Tier den passenden Lebensraum
+                        zu.</mattext>
+                </material>
+                <response_grp ident="MQ" rcardinality="Multiple">
+                    <render_choice shuffle="No">
+                        <response_label ident="1" match_max="1" match_group="3,4">
+                            <material>
+                                <mattext>Frosch</mattext>
+                            </material>
+                        </response_label>
+                        <response_label ident="2" match_max="1" match_group="3,4">
+                            <material>
+                                <mattext>Kamel</mattext>
+                            </material>
+                        </response_label>
+                        <response_label ident="3">
+                            <material>
+                                <mattext>Teich</mattext>
+                            </material>
+                        </response_label>
+                        <response_label ident="4">
+                            <material>
+                                <mattext>Wüste</mattext>
+                            </material>
+                        </response_label>
+                    </render_choice>
+                </response_grp>
+            </flow>
+        </presentation>
+        <resprocessing>
+            <outcomes>
+                <decvar/>
+            </outcomes>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varsubset respident="MQ">3,1</varsubset>
+                </conditionvar>
+                <setvar action="Add">1</setvar>
+            </respcondition>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varsubset respident="MQ">4,2</varsubset>
+                </conditionvar>
+                <setvar action="Add">1</setvar>
+            </respcondition>
+        </resprocessing>
+    </item>
+
+    <item ident="il_1_qst_13" title="Freitext eingeben: Energie sparen" maxattempts="0">
+        <qticomment>Beispielaufgabe zum Fragetyp Freitext eingeben.</qticomment>
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assTextQuestion</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>textrating</fieldlabel><fieldentry>0</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>matchcondition</fieldlabel><fieldentry>0</fieldentry></qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <flow>
+                <material>
+                    <mattext texttype="text/plain">Nennen Sie zwei Massnahmen, mit denen im Alltag
+                        Energie gespart werden kann.</mattext>
+                </material>
+                <response_str ident="TEXT" rcardinality="Ordered">
+                    <render_fib fibtype="String" rows="6" columns="80"/>
+                </response_str>
+            </flow>
+        </presentation>
+        <resprocessing scoremodel="HumanRater">
+            <outcomes>
+                <decvar varname="WritingScore" vartype="Integer" minvalue="0" maxvalue="2"/>
+            </outcomes>
+            <respcondition>
+                <conditionvar>
+                    <other>tutor_rated</other>
+                </conditionvar>
+            </respcondition>
+        </resprocessing>
+    </item>
+
+    <item ident="il_1_qst_14" title="Datei hochladen: Diagramm" maxattempts="0">
+        <qticomment>Beispielaufgabe zum Fragetyp Datei hochladen.</qticomment>
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assFileUpload</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>points</fieldlabel><fieldentry>5</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>maxsize</fieldlabel><fieldentry>10</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>allowedextensions</fieldlabel><fieldentry>pdf,png,jpg</fieldentry></qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <flow>
+                <material>
+                    <mattext texttype="text/plain">Erstellen Sie ein einfaches Balkendiagramm zu
+                        Ihren Wochenlernzeiten und laden Sie es als PDF oder Bilddatei hoch.</mattext>
+                </material>
+            </flow>
+        </presentation>
+    </item>
+
+    <item ident="il_1_qst_15" title="Long Menu: Kontinente" maxattempts="0">
+        <qticomment>Beispielaufgabe zum Fragetyp Long Menu.</qticomment>
+        <itemmetadata>
+            <qtimetadata>
+                <qtimetadatafield><fieldlabel>ILIAS_VERSION</fieldlabel><fieldentry>11.4 2026-09-03</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>QUESTIONTYPE</fieldlabel><fieldentry>assLongMenu</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>minAutoCompleteLength</fieldlabel><fieldentry>1</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>identical_scoring</fieldlabel><fieldentry>0</fieldentry></qtimetadatafield>
+                <qtimetadatafield><fieldlabel>gapTypes</fieldlabel><fieldentry>["select"]</fieldentry></qtimetadatafield>
+            </qtimetadata>
+        </itemmetadata>
+        <presentation>
+            <flow>
+                <material>
+                    <mattext texttype="text/plain">Welcher Kontinent ist flaechenmaessig am
+                        groessten?</mattext>
+                </material>
+                <material>
+                    <mattext texttype="text/plain">[Longmenu 1]</mattext>
+                </material>
+                <response_str ident="LongMenu_1" rcardinality="Single">
+                    <response_label ident="A">
+                        <material>
+                            <fieldentry>Asien</fieldentry>
+                        </material>
+                    </response_label>
+                    <response_label ident="B">
+                        <material>
+                            <fieldentry>Europa</fieldentry>
+                        </material>
+                    </response_label>
+                    <response_label ident="C">
+                        <material>
+                            <fieldentry>Afrika</fieldentry>
+                        </material>
+                    </response_label>
+                </response_str>
+            </flow>
+        </presentation>
+        <resprocessing>
+            <outcomes>
+                <decvar/>
+            </outcomes>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varequal respident="LongMenu_1">Asien</varequal>
+                </conditionvar>
+                <setvar action="Add">1</setvar>
+            </respcondition>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varequal respident="LongMenu_1">Europa</varequal>
+                </conditionvar>
+                <setvar action="Add">0</setvar>
+            </respcondition>
+            <respcondition continue="Yes">
+                <conditionvar>
+                    <varequal respident="LongMenu_1">Afrika</varequal>
+                </conditionvar>
+                <setvar action="Add">0</setvar>
+            </respcondition>
+        </resprocessing>
+    </item>
+</questestinterop>
